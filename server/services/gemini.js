@@ -35,7 +35,7 @@ export async function generateRoast(repoData) {
   let response;
   try {
     response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3.1-flash-lite',
       contents: userPrompt,
       config: {
         systemInstruction: 'You are a brutally funny but ultimately helpful code roast comedian. You tear apart repos with wit and specificity, but every roast ends with genuine, actionable advice.',
