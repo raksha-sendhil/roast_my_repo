@@ -36,7 +36,7 @@ export default function App() {
       setSuggestions(data.suggestions);
       setStatus('done');
     } catch {
-      setErrorMsg('Network error. Make sure the server is running on port 3000.');
+      setErrorMsg('Network error. Could not reach the server.');
       setStatus('error');
     }
   }
